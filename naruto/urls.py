@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from comic import views as comic_views  # new
+from comic import views as comic_views
 import settings
 
 urlpatterns = [
-    url(r'^(\w+)$', comic_views.index),  # new
+    url(r'^next$', comic_views.get_next),
     url(r'^admin/', admin.site.urls),
-    url( r'^static/(?P<path>.*)$', 'django.views.static.serve',{ 'document_root': settings.STATIC_URL }),
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL}),
+    url(r'^(\w+)$', comic_views.index),
 ]

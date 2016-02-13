@@ -42,11 +42,22 @@
             <div class="container">
                 {% for image in images %}
                     <div class="content">
-                        <div><a href="{{ base }}/{{ image.url }}">
-                            <img src="{{ base }}/{{ image.url }}/thumb" title="{{ content.title }}第{{ image.page }}页"
-                                 alt="{{ content.title }}第{{ image.page }}页" class="thumb"/></a></div>
+                        <div>
+                            <a href="{{ base }}/{{ image.url }}">
+                                <img src="{{ base }}/{{ image.url }}/thumb"
+                                     title="{{ content.title }}第{{ image.page }}页"
+                                     alt="{{ content.title }}第{{ image.page }}页" class="thumb"/>
+                            </a>
+                        </div>
                     </div>
                 {% endfor %}
+                <div class="content">
+                    <div>
+                        <a href="/next" class="next">
+                            下一话
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

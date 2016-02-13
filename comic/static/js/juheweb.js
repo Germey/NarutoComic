@@ -149,6 +149,9 @@ $toolbar.hover(
 $("#outer_container a").click(function (event) {
     event.preventDefault();
     var $this = $(this);
+    if ($this.hasClass('next')) {
+        window.location.href = '/next';
+    }
     GetNextPrevImages($this);
     GetImageTitle($this);
     SwitchImage(this);

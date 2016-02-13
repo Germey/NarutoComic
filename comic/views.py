@@ -15,7 +15,8 @@ def index(request, name):
         'images': images,
     })
 
-
+def get_next(request):
+    return HttpResponse('sdf')
 '''
 def index2(request):
     home_display_columns = Column.objects.filter(home_display=True)
