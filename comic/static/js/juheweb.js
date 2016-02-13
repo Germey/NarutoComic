@@ -186,6 +186,13 @@ $prevImageBtn.click(function (event) {
 if ($keyboardNavigation == "on") {
     $(document).keydown(function (ev) {
         if (ev.keyCode == 39) { //right arrow
+            if ($outer_container.data("nextImage") == '/next') {
+                $('#menu-wrap').fadeIn('slow');
+                setTimeout(function () {
+                    $('#menu-wrap').fadeOut('slow');
+                }, 5000);
+                return;
+            }
             SwitchImage($outer_container.data("nextImage"));
             var $this = $("#outer_container a[href='" + $outer_container.data("nextImage") + "']");
             GetNextPrevImages($this);
