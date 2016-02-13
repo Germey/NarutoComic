@@ -5,12 +5,12 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class Company(models.Model):
+class Content(models.Model):
     name = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
 
 
-class Product(models.Model):
+class Image(models.Model):
     name = models.CharField(max_length=255)
     url = models.CharField(max_length=255)
     page = models.IntegerField(max_length=5)
