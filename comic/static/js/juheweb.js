@@ -161,6 +161,13 @@ $("#outer_container a").click(function (event) {
 //next/prev images buttons
 $nextImageBtn.click(function (event) {
     event.preventDefault();
+    if ($outer_container.data("nextImage") == '/next') {
+        $('#menu-wrap').fadeIn('slow');
+        setTimeout(function(){
+            $('#menu-wrap').fadeOut('slow');
+        }, 5000);
+        return;
+    }
     SwitchImage($outer_container.data("nextImage"));
     var $this = $("#outer_container a[href='" + $outer_container.data("nextImage") + "']");
     GetNextPrevImages($this);
@@ -308,6 +315,9 @@ function findPos(obj) {
 }
 
 $(function () {
+    setTimeout(function(){
+        $('#menu ul').fadeOut('slow');
+    }, 5000);
     $('#menu').on('mouseover', function () {
         $(this).find('ul').fadeIn('slow');
     }).on('mouseleave', 'ul', function () {
