@@ -222,3 +222,31 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
+::-webkit-scrollbar {
+	width:3px;
+	padding-right: 5px;
+}
+::-webkit-scrollbar:horizontal {
+	height:20px;
+	margin-bottom:2px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    height: 20px;
+}
+::-webkit-scrollbar-track-piece {
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+	width: 5px;
+	height: 20px;
+	top: 100px;
+	border-radius: 2px;
+	background: rgba(200, 200, 200, 0.6);
+	opacity: 0.6;
+}
+::-webkit-scrollbar-thumb:hover {
+	height: 20px;
+    background: rgba(200, 200, 200, 0.2);
+}

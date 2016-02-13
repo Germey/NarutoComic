@@ -55,21 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="juheweb.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="juheweb.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comic/static/css/juheweb.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="197" column="1" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.96102566">
+              <caret line="251" column="1" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="juheweb.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="juheweb.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comic/static/js/juheweb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29846153">
-              <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="314" column="1" selection-start-line="314" selection-start-column="1" selection-end-line="314" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/comic/views.py" />
         <option value="$PROJECT_DIR$/naruto/urls.py" />
         <option value="$PROJECT_DIR$/comic/templates/index.html" />
-        <option value="$PROJECT_DIR$/comic/static/css/juheweb.css" />
         <option value="$PROJECT_DIR$/comic/static/js/juheweb.js" />
+        <option value="$PROJECT_DIR$/comic/static/css/juheweb.css" />
       </list>
     </option>
   </component>
@@ -855,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comic/static/css/juheweb.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="197" column="1" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comic/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.5">
@@ -873,11 +865,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comic/static/js/juheweb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29846153">
-          <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="314" column="1" selection-start-line="314" selection-start-column="1" selection-end-line="314" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comic/static/css/juheweb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96102566">
+          <caret line="251" column="1" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

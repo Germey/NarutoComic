@@ -4,7 +4,7 @@ $defaultViewMode = "full"; //full, normal, original
 $tsMargin = 30; //first and last thumbnail margin (for better cursor interaction)
 $scrollEasing = 600; //scroll easing amount (0 for no easing)
 $scrollEasingType = "easeOutCirc"; //scroll easing type
-$thumbnailsContainerOpacity = 0.8; //thumbnails area default opacity
+$thumbnailsContainerOpacity = 0; //thumbnails area default opacity
 $thumbnailsContainerMouseOutOpacity = 0; //thumbnails area opacity on mouse out
 $thumbnailsOpacity = 0.6; //thumbnails default opacity
 $nextPrevBtnsInitState = "show"; //next/previous image buttons initial state ("hide" or "show")
@@ -163,7 +163,7 @@ $nextImageBtn.click(function (event) {
     event.preventDefault();
     if ($outer_container.data("nextImage") == '/next') {
         $('#menu-wrap').fadeIn('slow');
-        setTimeout(function(){
+        setTimeout(function () {
             $('#menu-wrap').fadeOut('slow');
         }, 5000);
         return;
@@ -315,7 +315,7 @@ function findPos(obj) {
 }
 
 $(function () {
-    setTimeout(function(){
+    setTimeout(function () {
         $('#menu ul').fadeOut('slow');
     }, 5000);
     $('#menu').on('mouseover', function () {
