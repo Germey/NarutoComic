@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from comic import views as comic_views  # new
+import settings
 
 urlpatterns = [
-    url(r'^$', comic_views.index),  # new
+    url(r'^(\w+)$', comic_views.index),  # new
     url(r'^admin/', admin.site.urls),
+    url( r'^static/(?P<path>.*)$', 'django.views.static.serve',{ 'document_root': settings.STATIC_URL }),
 ]
