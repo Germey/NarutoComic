@@ -11,8 +11,9 @@
 <div id="bg">
     <a href="#" class="nextImageBtn" title="下一张"></a>
     <a href="#" class="prevImageBtn" title="上一张"></a>
-    <img src="/static/images/Universe_and_planets_digital_art_wallpaper_denebola.jpg" width="1680" height="1050"
-         alt="聚合素材 - www.images.com" title="聚合素材 - www.images.com" id="bgimg"/>
+    <img src="{{ base }}/{{ images.first.url }}" width="1680" height="1050"
+         alt="{{ content.title }}第{{ images.first.page }}页" title="{{ content.title }}第{{ images.first.page }}页"
+         id="bgimg"/>
 </div>
 
 <div id="preloader">
@@ -33,70 +34,10 @@
                 {% for image in images %}
                     <div class="content">
                         <div><a href="{{ base }}/{{ image.url }}">
-                            <img src="{{ base }}/{{ image.url }}/thumb" title="聚合素材 - www.images.com"
-                                 alt="聚合素材 - www.images.com" class="thumb"/></a></div>
+                            <img src="{{ base }}/{{ image.url }}/thumb" title="{{ content.title }}第{{ image.page }}页"
+                                 alt="{{ content.title }}第{{ image.page }}页" class="thumb"/></a></div>
                     </div>
                 {% endfor %}
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_denebola.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_denebola_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_lux.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_lux_thumb.jpg"
-                             title="www.images.com" alt="www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_dk.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_dk_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_albireo.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_albireo_thumb.jpg"
-                             title="聚合素材" alt="聚合素材" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_church.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_church_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_Decampment.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_Decampment_thumb.jpg"
-                             title="www.images.com" alt="www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_Hibernaculum.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_Hibernaculum_thumb.jpg"
-                             title="聚合素材" alt="聚合素材" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_lucernarium.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_lucernarium_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_moons.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_moons_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_praedestinatio.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_praedestinatio_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_transitorius.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_transitorius_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="/static/images/Universe_and_planets_digital_art_wallpaper_victimofgravity.jpg">
-                        <img src="/static/images/Universe_and_planets_digital_art_wallpaper_victimofgravity_thumb.jpg"
-                             title="聚合素材 - www.images.com" alt="聚合素材 - www.images.com" class="thumb"/></a></div>
-                </div>
             </div>
         </div>
     </div>

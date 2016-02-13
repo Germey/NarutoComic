@@ -266,7 +266,7 @@ function FullScreenBackground(theItem,imageWidth,imageHeight){
 			};
 		}
 		$(theItem).css("margin-left",(winWidth-$(theItem).width())/2);
-		$(theItem).css("margin-top",(winHeight-$(theItem).height())/2);
+		//$(theItem).css("margin-top",(winHeight-$(theItem).height())/2);
 	} else { //no scale
 		$(theItem).attr("width",imageWidth);
 		$(theItem).attr("height",imageHeight);
