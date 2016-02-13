@@ -8,8 +8,9 @@ def index(request, name):
     #
     # return render(request, 'index.html')
     content = Content.objects.get(name=name)
-    images = Content.objects.filter(name=name).order_by('page')
+    images = Image.objects.filter(name=name).order_by('page')
     return render(request, 'index.html', {
+        'base': 'http://7xlxrt.com1.z0.glb.clouddn.com',
         'content': content,
         'images': images,
     })
