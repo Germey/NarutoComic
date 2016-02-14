@@ -13,14 +13,17 @@ def index(request):
 
 
 def show(request, name):
-    #
-    # return render(request, 'index.html')
     content = Content.objects.get(name=name)
+    try:
+        next = Content.objects.get(id=content.id-1)
+    except Content.DoesNotExist:
+        next = None
     images = Image.objects.filter(name=name).order_by('page')
     return render(request, 'show.html', {
         'base': 'http://7xlxrt.com1.z0.glb.clouddn.com',
         'content': content,
         'images': images,
+        'next': next,
     })
 
 '''

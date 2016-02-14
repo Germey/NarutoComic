@@ -1,0 +1,12 @@
+<ul>
+    <li>
+        <a href="/">返回目录</a>
+    </li>
+    <li>
+        {% if next %}
+            <a href="/{{ next.name }}" class="next">下一话:{{ next.title }}</a>
+        {% else %}
+            <a class="next">已是最后一话</a>
+        {% endif %}
+    </li>
+</ul>

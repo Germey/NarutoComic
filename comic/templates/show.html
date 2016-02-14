@@ -27,24 +27,10 @@
     </a>
 </div>
 <div id="menu">
-    <ul>
-        <li>
-            <a href="/">返回目录</a>
-        </li>
-        <li>
-            <a href="/next">下一话</a>
-        </li>
-    </ul>
+    {% include 'nav.html' %}
 </div>
 <div id="menu-wrap">
-    <ul>
-        <li>
-            <a href="/">返回目录</a>
-        </li>
-        <li>
-            <a href="/next">下一话</a>
-        </li>
-    </ul>
+    {% include 'nav.html' %}
 </div>
 <div id="thumbnails_wrapper">
     <div id="outer_container">
@@ -63,9 +49,11 @@
                 {% endfor %}
                 <div class="content">
                     <div>
-                        <a href="/next" class="next">
-                            下一话
-                        </a>
+                        {% if next %}
+                            <a href="/{{ next.name }}" class="next">下一话:{{ next.title }}</a>
+                        {% else %}
+                            <a href="/" class="next">全剧终</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

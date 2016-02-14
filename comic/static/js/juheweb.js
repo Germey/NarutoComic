@@ -150,7 +150,7 @@ $("#outer_container a").click(function (event) {
     event.preventDefault();
     var $this = $(this);
     if ($this.hasClass('next')) {
-        window.location.href = '/next';
+        window.location.href = $this.attr('href');
     }
     GetNextPrevImages($this);
     GetImageTitle($this);
@@ -161,7 +161,8 @@ $("#outer_container a").click(function (event) {
 //next/prev images buttons
 $nextImageBtn.click(function (event) {
     event.preventDefault();
-    if ($outer_container.data("nextImage") == '/next') {
+    console.log($outer_container.data('nextImage').indexOf('/'));
+    if ($outer_container.data("nextImage").indexOf('/') == 0) {
         $('#menu-wrap').fadeIn('slow');
         setTimeout(function () {
             $('#menu-wrap').fadeOut('slow');
@@ -176,6 +177,9 @@ $nextImageBtn.click(function (event) {
 
 $prevImageBtn.click(function (event) {
     event.preventDefault();
+    if ($outer_container.data("prevImage").indexOf('/') == 0) {
+        return;
+    }
     SwitchImage($outer_container.data("prevImage"));
     var $this = $("#outer_container a[href='" + $outer_container.data("prevImage") + "']");
     GetNextPrevImages($this);
@@ -275,7 +279,6 @@ function FullScreenBackground(theItem, imageWidth, imageHeight) {
                 $(theItem).attr("height", winHeight);
                 $(theItem).attr("width", picWidth * winHeight);
             }
-            ;
         } else { //normal size image mode
             if ((winHeight / winWidth) > picHeight) {
                 $(theItem).attr("width", winWidth);
