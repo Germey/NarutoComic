@@ -19,8 +19,8 @@ from comic import views as comic_views
 import settings
 
 urlpatterns = [
-    url(r'^next$', comic_views.get_next),
     url(r'^admin/', admin.site.urls),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL}),
-    url(r'^(\w+)$', comic_views.index),
+    url(r'^$', comic_views.index),
+    url(r'^(\w+)$', comic_views.show)
 ]
