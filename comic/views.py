@@ -20,7 +20,7 @@ def show(request, name):
         next = None
     images = Image.objects.filter(name=name).order_by('page')
     return render(request, 'show.html', {
-        'base': 'http://7xlxrt.com1.z0.glb.clouddn.com',
+        'base': 'http://naruto.cuiqingcai.com',
         'content': content,
         'images': images,
         'next': next,
