@@ -80,7 +80,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'naruto',
         'USER': 'root',
+<<<<<<< HEAD:naruto/settings.sample.py
         'PASSWORD': '',
+=======
+        'PASSWORD': '940629cqc',
+>>>>>>> f627009afc8d00a47557cf8496a58f4153c07cf8:naruto/settings.py
         'HOST': 'localhost',
         'PORT': '3306',
     }
